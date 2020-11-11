@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <title>Buscar CEP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="index.js"></script> 
+
+    <style>
+        .div1{
+            margin: auto;
+            width: 60%;
+            min-height: 650px;
+        }
+        .centerH{
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .centerV{
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        .divBuscarCEP{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="div1">
+        <div class= "divBuscarCEP">
+            <h1>Buscar CEP</h1>
+        </div>
+        <div class="container" style="margin-bottom: 50px;">
+            <div class="form-group">
+                <label for="cep">CEP:</label>
+                <input type="text" class="form-control" id="cep" placeholder="Digite o CEP" name="cep">
+            </div>
+            <button type="submit" class="btn btn-primary" onclick="searchCEP()">Buscar</button>
+        </div>
+        <div class="container" style="border-style: solid; padding-bottom: 10px;">
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" class="form-control" id="logradouro" name="logradouro">
+            <label for="bairro">Bairro:</label>
+            <input type="text" class="form-control" id="bairro" name="bairro">
+            <label for="cidade">Cidade:</label>
+            <input type="text" class="form-control" id="cidade" name="cidade">
+            <label for="estado">Estado:</label>
+            <input type="text" class="form-control" id="uf" name="uf">
+          
+        </div>
+    </div>
+
+</body>
